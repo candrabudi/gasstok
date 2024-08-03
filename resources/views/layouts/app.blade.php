@@ -76,20 +76,8 @@
             @include('layouts.partials.side_menu')
             <div
                 class="max-w-full md:max-w-none rounded-[30px] md:rounded-none px-4 md:px-[22px] min-w-0 min-h-screen bg-slate-100 flex-1 md:pt-20 pb-10 mt-5 md:mt-1 relative dark:bg-darkmode-700 before:content-[''] before:w-full before:h-px before:block">
-                <div class="grid grid-cols-12 gap-6">
-                    <div class="col-span-12 2xl:col-span-9">
-                        <div class="grid grid-cols-12 gap-6">
-                            @yield('content')
-                        </div>
-                    </div>
-                    <div class="col-span-12 2xl:col-span-3">
-                        <div class="-mb-10 pb-10 2xl:border-l">
-                            <div class="grid grid-cols-12 gap-x-6 gap-y-6 2xl:gap-x-0 2xl:pl-6">
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                
+                    @yield('content')
             </div>
         </div>
     </div>

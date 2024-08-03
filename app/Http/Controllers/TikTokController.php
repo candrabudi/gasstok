@@ -143,4 +143,11 @@ class TikTokController extends Controller
         }
     }
 
+    public function detail($id)
+    {
+        $tiktokResult = TiktokResult::where('id', $id)
+            ->first();
+        return view('tiktok_detail', compact('tiktokResult'));
+    }
+
 }
